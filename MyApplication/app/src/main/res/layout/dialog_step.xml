@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".inventory.IngredientDialog">
+
+    <EditText
+        android:id="@+id/etStepName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/recipe_step"
+        android:autofillHints="@string/recipe_step"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:inputType="text"
+        android:layout_toStartOf="@+id/etStepNumber"/>
+
+    <TextView
+        android:id="@+id/etStepNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/recipe_step_number"
+        android:autofillHints="@string/ingredient_amount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!--    Recipes-->
+    <string name="recipes">Recipes</string>
+    <string name="recipes_delete_all_ingredients">Delete All Recipes</string>
+    <string name="recipes_search">Search</string>
+    <string name="recipe_title">Recipe Title</string>
+    <string name="recipe_description">Recipe Description</string>
+    <string name="recipe_step">Recipe Step</string>
+    <string name="recipe_step_number">1</string>
+    <string name="recipe_id">1</string>
+    <string name="recipe_ingredients">Ingredients</string>
+    <string name="recipe_steps">Steps</string>
+    <string name="recipe_save">Save Recipe</string>
+    <string name="delete_all_steps">Delete All Steps</string>
+    <string name="delete_all_ingredients">Delete all ingredients</string>
+
+    <!--    Inventory-->
+    <string name="inventory">Inventory</string>
+    <string name="inventory_delete_all_ingredients">Delete All Ingredients</string>
+    <string name="inventory_search">Search</string>
+    <string name="ingredient_name">Ingredient Name</string>
+    <string name="ingredient_amount">1.0</string>
+    <string name="ingredient_unit">oz</string>
+    <string name="add_ingredient">Add Ingredient</string>
+
+    <!--    Groups-->
+    <string name="groups">Groups</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>
