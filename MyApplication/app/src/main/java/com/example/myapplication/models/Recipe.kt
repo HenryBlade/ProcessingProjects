@@ -16,4 +16,7 @@ class Recipe(
     var ingredientList: MutableList<RecipeIngredient> = arrayListOf()
     var stepList: MutableList<Step> = arrayListOf()
 
+    public fun addIngredient(ingredient: RecipeIngredient) = ingredientList.add(ingredient)
+
+    public fun removeIngredient(ingredient: RecipeIngredient) = ingredientList.remove(ingredient)
 }

@@ -37,9 +37,19 @@ class EditRecipeRepository(
 
     suspend fun update(recipe: Recipe) = recipesDao.update(recipe)
 
-    suspend fun insertIngredient(ingredient: RecipeIngredient) = ingredientsDao.insert(ingredient)
+    suspend fun insertIngredient(ingredient: RecipeIngredient) {
+        ingredientsDao.insert(ingredient)
+        val tempRecipe = recipe.value!!
+        tempRecipe.addIngredient(ingredient)
+        recipesDao.update(tempRecipe)
+    }
 
-    private suspend fun insertIngredients(ingredients: List<RecipeIngredient>) = ingredientsDao.insert(ingredients)
+    private suspend fun insertIngredients(ingredients: List<RecipeIngredient>) {
+        ingredientsDao.insert(ingredients)
+        val tempRecipe = recipe.value!!
+        ingredients.forEach { tempRecipe.addIngredient(it) }
+        recipesDao.update(tempRecipe)
+    }
 
     suspend fun updateIngredient(ingredient: RecipeIngredient) = ingredientsDao.update(ingredient)
 

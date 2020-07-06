@@ -15,7 +15,7 @@
         android:autofillHints="@string/recipe_description"
         android:inputType="text"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:layout_toStartOf="@+id/etRecipeId"
+        android:layout_toStartOf="@+id/tvRecipeId"
          />
 
     <EditText

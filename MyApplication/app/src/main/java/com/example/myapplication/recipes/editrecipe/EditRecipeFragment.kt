@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -112,7 +111,7 @@ class EditRecipeFragment : Fragment() {
 
     private fun initViews() {
         if (!isNew) {
-            var r = viewModel.getRecipe().value
+//            var r = viewModel.getRecipe().value
             etRecipeTitle.setText(viewModel.getRecipe().value!!.title)
             etRecipeDesc.setText(viewModel.getRecipe().value!!.description)
             tvRecipeId.setText(viewModel.getRecipe().value!!.id)

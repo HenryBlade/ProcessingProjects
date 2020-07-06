@@ -22,6 +22,7 @@ interface RecipesDao {
     @Query("SELECT * FROM recipe_table WHERE id=:recipeId")
     fun getRecipe(recipeId: Int): LiveData<Recipe>
 
+
     @Query("SELECT * FROM recipe_table ORDER BY title ASC")
     fun getAllRecipes(): LiveData<List<Recipe>>
 }
